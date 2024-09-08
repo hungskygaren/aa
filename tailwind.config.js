@@ -23,10 +23,10 @@ export default {
       },
       maxWidth: {
         "35vw": "35vw",
-        "26vw": "26vw",
+        "29vw": "29vw",
       },
       width: {
-        "26vw": "26vw",
+        "29vw": "29vw",
       },
     },
   },

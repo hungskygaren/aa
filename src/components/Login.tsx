@@ -1,9 +1,10 @@
-import { Col, Form, Row } from "antd";
+import { Button, Col, Form, Row } from "antd";
 
 import logo from "../assets/logo.jpg";
 import imgg from "../assets/imgg.png";
 import TextBox from "./Input/TextBox";
 import loginpc from "../assets/loginpc.jpg";
+import Link from "antd/es/typography/Link";
 function Login() {
   const [form] = Form.useForm();
 
@@ -55,20 +56,50 @@ function Login() {
           <Col />
         </Col>
         <Col span={14}>
-          <div className="bg-customGray h-full ">
+          <div className="bg-customGray h-full flex flex-col items-center justify-center  ">
             <Row>
               <Col span={24}>
-                <div>
-                  <div>
-                    <h3>Welcome back</h3>
-                    <p>
+                <div className="flex flex-col items-center h-full w-full">
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-3xl font-bold">Welcome back ! </h3>
+                    <p className="mt-2">
                       Giải pháp quản trị nâng cao trải nghiệm nhân sự đầu tiên
                       tại Việt Nam
                     </p>
                   </div>
-                  <Form form={form} layout="vertical">
-                    <TextBox />
-                    <TextBox />
+                  <Form
+                    className="mt-4 w-full flex flex-col items-center"
+                    form={form}
+                    layout="vertical"
+                  >
+                    <TextBox
+                      placeholder={"Nhập mã nhân viên"}
+                      classname={"w-29vw max-w-29vw"}
+                      classnameFI={"  flex  "}
+                      label={"Tên đăng nhập"}
+                      type={"text"}
+                    />
+                    <TextBox
+                      placeholder={"Nhập mật khẩu"}
+                      classname={"w-29vw max-w-29vw"}
+                      classnameFI={" flex   "}
+                      label={"Mật khẩu "}
+                      type="password"
+                    />
+                    <Form.Item className="  ">
+                      <Button
+                        className=" rounded-xl w-29vw max-w-29vw bg-customGreen text-white "
+                        htmlType="submit"
+                      >
+                        Đăng nhập
+                      </Button>
+                    </Form.Item>
+                    <Form.Item className=" ">
+                      <span className="">Bạn có nhớ mật khẩu ?</span>
+                      <Button type="link" className=" pl-1 text-customGreen">
+                        Quên mật khẩu
+                      </Button>
+                    </Form.Item>
                   </Form>
                 </div>
               </Col>

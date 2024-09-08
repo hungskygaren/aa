@@ -1,28 +1,35 @@
 import { Form, Input } from "antd";
 
-const TextBox = ({}) => {
+const TextBox = ({ label, type, classname, classnameFI, placeholder }) => {
   return (
     <Form.Item
-    //   className={}
-
-    // wrapperCol={ }
-    // labelCol={}
-    // labelAlign={}
-    // colon={}
-    // label={}
-    // rules={}
-    // required={}
+      // wrapperCol={ }
+      // labelCol={}
+      // labelAlign={}
+      // colon={}
+      label={label}
+      // rules={}
+      // required={}
+      className={classnameFI}
     >
-      <Input
-      // min={}
-      // max={}
-      // name={}
-      // className={}
-      // type={}
-      // value={}
-      // onChange={}
-      // placeholder="Enter Text"
-      />
+      {type === "password" ? (
+        <Input.Password
+          className={classname}
+          type={type}
+          placeholder={placeholder}
+        />
+      ) : (
+        <Input
+          // min={}
+          // max={}
+          // name={}
+          className={classname}
+          type={type}
+          // value={}
+          // onChange={}
+          placeholder={placeholder}
+        />
+      )}
     </Form.Item>
   );
 };
