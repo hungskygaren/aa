@@ -5,6 +5,28 @@ export default {
     extend: {
       colors: {
         customGreen: "#068558",
+        customGray: "#F8F8F8",
+      },
+      margin: {
+        "10vh": "10vh",
+        "5vh": "5vh",
+        "2vh": "2vh",
+      },
+      maxHeight: {
+        "59vh": "59vh",
+        "85vh": "85vh",
+      },
+      height: {
+        "65vh": "65vh",
+        "10vh": "10vh",
+        "5vh": "5vh",
+      },
+      maxWidth: {
+        "35vw": "35vw",
+        "26vw": "26vw",
+      },
+      width: {
+        "26vw": "26vw",
       },
     },
   },
