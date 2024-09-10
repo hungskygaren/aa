@@ -19,7 +19,7 @@ export default {
       height: {
         "65vh": "65vh",
         "10vh": "10vh",
-        "5vh": "5vh",
+        "40vh": "40vh",
       },
       maxWidth: {
         "35vw": "35vw",
@@ -27,6 +27,7 @@ export default {
       },
       width: {
         "29vw": "29vw",
+        "35vw": "35vw",
       },
     },
   },
